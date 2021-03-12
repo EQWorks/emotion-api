@@ -1,6 +1,6 @@
 {
-    "install": "pip3 install --user requirements.txt",
-    "start": "python app.py",
+    "install": "pip3 install -r requirements.txt",
+    "start": "python3 app.py",
     "watch": {
       "ignore": [
         "\\.pyc$",
@@ -14,7 +14,7 @@
       "restart": {
         "include": [
           "\\.py$",
-          "python app.py"
+          "python3 app.py"
         ]
       },
       "throttle": 1000
