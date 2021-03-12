@@ -1,6 +1,6 @@
 {
-    "install": "pip3 install --user pipenv && pipenv install",
-    "start": "pipenv run start",
+    "install": "pip3 install --user requirements.txt",
+    "start": "python app.py",
     "watch": {
       "ignore": [
         "\\.pyc$",
@@ -14,7 +14,7 @@
       "restart": {
         "include": [
           "\\.py$",
-          "pipenv run start"
+          "python app.py"
         ]
       },
       "throttle": 1000
